@@ -12,6 +12,9 @@
     <script src="script.js" title="script"></script>
   </head>
   <body>
+    <div id="loader">
+<p>Loading...</p>
+</div>
   <div class="container">
            <div class="tapbar">
            <header class="header">
@@ -34,5 +37,9 @@
              <span id="nocopy" class="notranslate">Demo</span>
            </footer>
        </div>
+    <script>
+      $(window).load(function() {
+      $( "#loader" ).hide();
+   });</script>
   </body>
 </html>
